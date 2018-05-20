@@ -1,14 +1,34 @@
+<!-- Application Header -->
 <mat-toolbar color="primary">
-    <span>Spring Roll Company</span>
+  <button mat-icon-button (click)="snav.toggle()">
+    <mat-icon class="mat-18">menu</mat-icon>
+  </button>
+  <span>Spring Roll Company</span>
+
 </mat-toolbar>
 <!-- Application Navigation -->
-<mat-sidenav-container>
-  <mat-sidenav mode="over" align="start" opened>
-    Department Management
-  </mat-sidenav>
-  <mat-sidenav-content>
+<div class="spring-roll-container">
+  <mat-sidenav-container>
+    <mat-sidenav #snav mode="side" align="start">
+      <mat-nav-list>
+        <mat-list-item>
+          <button mat-button class="category-btn">
+            <mat-icon class="mat-18">domain</mat-icon>
+            Department</button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button>
+            <mat-icon class="mat-18">people</mat-icon>
+            Employee
+          </button>
+        </mat-list-item>
 
-    <!-- To be defined -->
-  </mat-sidenav-content>
-  <!-- Body -->
-</mat-sidenav-container>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      Some Random Content
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

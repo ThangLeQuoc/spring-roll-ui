@@ -1,0 +1,16 @@
+mat-toolbar {
+  display: flex;
+}
+
+.spring-roll-container {
+  height: 900px;
+}
+
+mat-sidenav-container {
+  height: inherit;
+}
+
+.category-btn {
+  padding-left: 0px;
+  padding-right: 5px;
+}
